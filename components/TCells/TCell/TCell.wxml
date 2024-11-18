@@ -1,0 +1,26 @@
+<!-- components/base/TCells/TCell/TCell.wxml -->
+<view class="t-cell {{ clickable?'t-cell_clickable':'' }} {{ disabled?'t-cell_disabled':'' }}">
+  <view class="t-cell-header" bind:tap="tapHeader">
+    <view class="t-cell-left">
+      <view class="t-cell-title ellipsis1" bind:tap="tapTitle">
+        {{ title }}
+        <slot name="title" />
+      </view>
+      <view class="t-cell-label {{ useLableSlot||label?'t-cell-label_used':'' }}" bind:tap="tapLabel">
+        <slot name="label" />
+        {{ label }}
+      </view>
+    </view>
+    <view class="t-cell-content" bind:tap="tapContent">
+      <view >
+        <slot />
+        {{ content }}
+      </view>
+      <text class="t-cell-content_icon antd antd-right" wx:if="{{ link }}"></text>
+    </view>
+  </view>
+  <view class="t-cell-description {{ useDescriptionSlot||description?'t-cell-description_used':'' }}" bind:tap="tapDescription">
+    <slot name="description" />
+    {{ description }}
+  </view>
+</view>

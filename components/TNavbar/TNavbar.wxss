@@ -1,0 +1,37 @@
+/* components/base/navbar/navbar.wxss */
+.navbar {
+  display: grid;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar-left {
+  flex-shrink: 0;
+}
+
+.navbar-page-route {
+  display: flex;
+  column-gap: 50rpx;
+  margin-left: 10rpx;
+}
+
+.navbar-page-route-icon {
+  font-size: 36rpx;
+}
+
+.navbar-page-route-icon::active {
+  opacity: 0.8;
+}
+
+.navbar-body {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* width: 230px; */
+  font-size: 32rpx;
+  text-overflow: ellipsis;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+}

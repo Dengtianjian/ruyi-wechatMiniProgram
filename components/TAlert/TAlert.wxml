@@ -1,0 +1,16 @@
+<!-- components/base/TAlert/TAlert.wxml -->
+<view class="t-alert {{ bordered?'t-alert_border':'' }} t-alert_{{ type }} t-alert_size-{{ size }}" style="display:{{ show?'flex':'none' }};">
+  <view class="t-alert_icon {{ icon }}" wx:if="{{ showIcon }}">
+    <slot name="icon" />
+  </view>
+  <view class="t-alert-main">
+    <view class="t-alert_title" wx:if="{{ useTitleSlot||title }}">
+      {{ title }}
+      <slot name="title" />
+    </view>
+    <view class="t-alert_content">
+      <slot />
+    </view>
+  </view>
+  <view class="t-alert_close antd antd-close" wx:if="{{ closable }}" bind:tap="closeAlert"></view>
+</view>

@@ -1,0 +1,32 @@
+/* Ruyi/MiniProgram/components/Rtatus/RStatus.wxss */
+
+.r-status {
+  --font-size: 28rpx;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20rpx;
+  padding: 8rpx 0;
+  min-height: 100rpx;
+  color: #999;
+  font-size: var(--font-size);
+  box-sizing: border-box;
+}
+
+.r-status_loading-icon {
+  display: flex;
+  align-items: center;
+  column-gap: 4rpx;
+}
+
+.r-status_loading-icon-el {
+  width: 10rpx;
+  height: 10rpx;
+  background-color: var(--icon-color);
+  border-radius: 50%;
+}
+
+.r-status_loading-icon-el_active {
+  background-color: var(--icon-active-color);
+}

@@ -1,0 +1,5 @@
+/* components/base/TFullScreenContainer/TFullScreenContainer.wxss */
+.t-full-screen-container {
+  display: flex;
+  overflow: hidden;
+}

@@ -1,0 +1,50 @@
+/* components/base/TUploadImageList/TUploadImageList.wxss */
+.upload-media-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10rpx;
+}
+
+.upload-media-item {
+  position: relative;
+}
+
+.upload-media_remove {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  width: 34rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  text-align: center;
+  color: white;
+  font-size: 14rpx;
+  border-radius: 16rpx;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.upload-media_image,
+.upload-media_video {
+  display: block;
+  width: 218rpx;
+  height: 218rpx;
+  border-radius: 16rpx;
+}
+
+.upload-media-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 218rpx;
+  height: 218rpx;
+  font-size: 22rpx;
+  color: #9c9f9f;
+  background-color: #f6f9f9;
+  border-radius: 16rpx;
+}
+
+.upload-media-button_icon {
+  font-size: 36rpx;
+}

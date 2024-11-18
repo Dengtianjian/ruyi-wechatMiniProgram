@@ -1,0 +1,4 @@
+<!-- components/base/TFullScreenContainer/TFullScreenContainer.wxml -->
+<view class="t-full-screen-container" style="flex-wrap:{{ wrap }};flex-direction:{{ direction }};justify-content:{{ justify }};align-items:{{ align }};height:calc(100vh - {{ CustomNavbarHeight }}px - {{ subtracive }});">
+  <slot />
+</view>

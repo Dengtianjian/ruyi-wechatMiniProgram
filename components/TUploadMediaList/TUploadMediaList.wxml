@@ -1,0 +1,12 @@
+<!-- components/base/TUploadImageList/TUploadImageList.wxml -->
+<view class="upload-media-list">
+  <view class="upload-media-item" wx:for="{{ fileList }}" wx:key="key" bind:tap="previewMedia" data-index="{{ index }}">
+    <view class="upload-media_remove antd antd-close interaction-active" catch:tap="removeMedia" data-index="{{ index }}"></view>
+    <image class="upload-media_image" mode="aspectFill" src="{{ item.url }}" wx:if="{{ item.type==='image' }}" />
+    <video class="upload-media_video" mode="aspectFill" src="{{ item.url }}" wx:if="{{ item.type==='video' }}" />
+  </view>
+  <view class="upload-media-item upload-media-button interaction-active" bind:tap="addMedia" style="display:{{ fileList.length>=count?'none':'flex' }}">
+    <view class="antd antd-plus upload-media-button_icon"></view>
+    添加
+  </view>
+</view>

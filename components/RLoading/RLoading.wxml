@@ -1,0 +1,7 @@
+<view class="r-loading" wx:if="{{ show }}">
+  <view class="r-loading_loading-icon" style="--icon-color:{{ iconColor }};--icon-active-color:{{ iconActiveColor }}">
+    <view class="r-loading_loading-icon-el {{ activeIndex===0?'r-loading_loading-icon-el_active':'' }}"></view>
+    <view class="r-loading_loading-icon-el {{ activeIndex===1?'r-loading_loading-icon-el_active':'' }}"></view>
+    <view class="r-loading_loading-icon-el {{ activeIndex===2?'r-loading_loading-icon-el_active':'' }}"></view>
+  </view>
+</view>

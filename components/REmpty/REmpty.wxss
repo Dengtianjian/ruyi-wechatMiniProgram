@@ -1,0 +1,23 @@
+/* Ruyi/MiniProgram/components/REmpty/REmpty.wxss */
+
+.r-empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-break: break-all;
+  padding: 0 30rpx;
+}
+
+.r-empty-icon {
+  margin-bottom: 20rpx;
+}
+
+.r-empry-title {
+  margin: 20rpx 0;
+  font-size: 34rpx;
+}
+
+.r-empry-description {
+  color: #999;
+}

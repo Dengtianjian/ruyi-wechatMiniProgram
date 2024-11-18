@@ -1,0 +1,99 @@
+/* components/base/Form/TFormItem/TFormItem.wxss */
+.t-form-item_placement-left {
+  display: flex;
+  column-gap: 20rpx;
+}
+
+.t-form-item_border {
+  border-bottom: 1px solid #eee;
+}
+
+.t-form-item {
+  margin-bottom: calc(30rpx - 20rpx);
+}
+
+.t-form-item:last-of-type {
+  margin-bottom: 30rpx;
+}
+
+.t-form_label {
+  flex-shrink: 0;
+  align-self: flex-start;
+  padding: 20rpx 0;
+  font-size: 28rpx;
+}
+
+.t-form_label-required::after {
+  content: "*";
+  padding-left: 10rpx;
+  color: var(--asterisk-color);
+}
+
+.t-form-content {
+  flex-shrink: 0;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  column-gap: 8rpx;
+  /* min-height: 88rpx; */
+  line-height: 28rpx;
+  font-size: 28rpx;
+  word-break: break-all;
+  box-sizing: border-box;
+  border-radius: var(--radius-angle);
+}
+
+.t-form-prefix,
+.t-form-suffix {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.t-form-item_plain .t-form-content {
+  padding: 20rpx;
+  border: 1px solid #eee;
+}
+
+.t-form-item_border .t-form-content,
+.t-form-item_fill .t-form-content {
+  padding: 20rpx;
+  border: none;
+}
+
+.t-form-item_border.t-form-item_placement-top .t-form-content {
+  padding: 20rpx 0 0 0;
+}
+
+.t-form-item_fill .t-form-content {
+  min-height: 84rpx;
+  background-color: #f6f9f9;
+}
+
+.t-form-item_disabled .t-form-content {
+  opacity: 0.4;
+}
+
+.t-form-content textarea,
+.t-form-content input {
+  padding: 0rpx;
+  width: 100%;
+}
+
+.t-form-content radio-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+}
+
+.t-form-content radio-group radio {
+  flex-shrink: 0;
+}
+
+.t-form-prompt {
+  margin-top: 8rpx;
+  font-size: 24rpx;
+  color: #999;
+}

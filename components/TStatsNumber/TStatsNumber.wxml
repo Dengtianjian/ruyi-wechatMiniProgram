@@ -1,0 +1,2 @@
+<!-- components/base/TStatsNumber/TStatsNumber.wxml -->
+{{ numberValue }}

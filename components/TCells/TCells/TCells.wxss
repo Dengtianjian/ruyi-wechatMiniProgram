@@ -1,0 +1,6 @@
+/* components/base/TCells/index/index.wxss */
+.t-cells-title {
+  padding: 20rpx var(--container-padding) 10rpx;
+  font-size: 28rpx;
+  color: #0d1419;
+}

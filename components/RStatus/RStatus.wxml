@@ -1,0 +1,9 @@
+<!-- Ruyi/MiniProgram/components/Rtatus/RStatus.wxml -->
+<view class="r-status" style="--font-size:{{ fontSize }};">
+  <view class="r-status_loading-icon" wx:if="{{ loadingIcon&&loading }}" style="--icon-color:{{ iconColor }};--icon-active-color:{{ iconActiveColor }}">
+    <view class="r-status_loading-icon-el {{ activeIndex===0?'r-status_loading-icon-el_active':'' }}"></view>
+    <view class="r-status_loading-icon-el {{ activeIndex===1?'r-status_loading-icon-el_active':'' }}"></view>
+    <view class="r-status_loading-icon-el {{ activeIndex===2?'r-status_loading-icon-el_active':'' }}"></view>
+  </view>
+  {{ loading?loadingText:finished?finishedText:defaultText }}
+</view>

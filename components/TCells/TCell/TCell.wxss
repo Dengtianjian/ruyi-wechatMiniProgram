@@ -1,0 +1,68 @@
+/* components/base/TCells/TCell/TCell.wxss */
+.t-cell {
+  padding: 20rpx var(--container-padding);
+  background-color: white;
+}
+
+.t-cell_disabled .t-cell-header,
+.t-cell_disabled .t-cell-description {
+  opacity: 0.2;
+}
+
+.t-cell_clickable:active {
+  background-color: #eee;
+}
+
+.t-cell:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+
+.t-cell-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 20rpx;
+  min-height: 64rpx;
+  line-height: 28rpx;
+  font-size: 28rpx;
+}
+
+.t-cell-left {
+  flex-shrink: 0;
+}
+
+.t-cell-title {
+  line-height: 48rpx;
+}
+
+.t-cell-content {
+  display: flex;
+  align-items: center;
+  column-gap: 8rpx;
+  color: #969799;
+  font-size: 26rpx;
+  line-height: normal;
+}
+
+.t-cell-content_icon {
+  font-size: 26rpx;
+}
+
+.t-cell-label,
+.t-cell-description {
+  font-size: 24rpx;
+  color: #969799;
+  word-break: break-all;
+}
+
+.t-cell-label {
+  line-height: 34rpx;
+}
+
+.t-cell-label_used {
+  margin-top: 20rpx;
+}
+
+.t-cell-description_used {
+  margin-top: 10rpx;
+}

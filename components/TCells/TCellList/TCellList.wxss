@@ -1,0 +1,10 @@
+/* components/base/TCells/TCellList/TCellList.wxss */
+.t-cell-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20rpx;
+}
+
+.t-cell-list_safe-area {
+  padding-bottom: env(safe-area-inset-bottom);
+}

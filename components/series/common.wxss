@@ -1,0 +1,119 @@
+page {
+  /** 字体大小 */
+  --font-size-body-3: 28rpx;
+  /** 辅助文案/次要文案 */
+  --font-size-body-2: 26rpx;
+  /** 正文-常规-小 */
+  --font-size-body-1: 24rpx;
+  /** 正文-常规 */
+  --font-size-caption: 24rpx;
+  /** 水印文本 */
+  --font-size-title-1: 32rpx;
+  /** 标题-小 */
+  --font-size-title-2: 40rpx;
+  /** 标题-中 */
+  --font-size-title-3: 48rpx;
+  /** 标题-大 */
+  --font-size-display-1: 72rpx;
+  /** 运营标题-小 */
+  --font-size-display-2: 96rpx;
+  /** 运营标题-中 */
+  --font-size-display-3: 112rpx;
+  /** 运营标题-大 */
+
+  /** 字重 */
+  /** 极细 */
+  --font-weight-100: 100;
+  /** 纤细 */
+  --font-weight-200: 200;
+  /** 细体 */
+  --font-weight-300: 300;
+  /** 常规 */
+  --font-weight-400: 400;
+  /** 中等（加粗） */
+  --font-weight-500: 500;
+  /** 半粗 */
+  --font-weight-600: 600;
+  /** 粗体 */
+  --font-weight-700: 700;
+  /** 中黑 */
+  --font-weight-800: 800;
+  /** 黑体 */
+  --font-weight-900: 900;
+
+  /** 尺寸*/
+  --size-none: 0px;
+  --size-1: 8rpx;
+  --size-2: 16rpx;
+  --size-3: 24rpx;
+  --size-4: 16rpx;
+  --size-5: 40rpx;
+  --size-6: 48rpx;
+  --size-7: 56rpx;
+  --size-8: 64rpx;
+  --size-9: 72rpx;
+  --size-50: 400rpx;
+
+  /** 组件尺寸*/
+  /** 迷你 */
+  --size-mini: var(--size-6);
+  /** 较小 */
+  --size-small: var(--size-7);
+  /** 中等 */
+  --size-default: var(--size-8);
+  /** 较大 */
+  --size-large: var(--size-9);
+
+  /** 边框*/
+  /** 无边框*/
+  --border-none: 0px;
+  /** 常规 */
+  --border-1: 2rpx;
+  /** 较粗 */
+  --border-2: 4rpx;
+  /** 粗 */
+  --border-3: 6rpx;
+
+  /** 边框圆角*/
+  /** 无圆角 */
+  --border-radius-none: none;
+  /** 圆角-常规 */
+  --border-radius-small: none;
+  /** 圆角-中等 */
+  --border-radius-medium: none;
+  /** 圆角-较大 */
+  --border-radius-large: none;
+  /** 圆角-全圆角 */
+  --border-radius-circle: 50%;
+
+  /** 阴影*/
+  /** 特殊阴影 */
+  --shadow-special: 0 0 2rpx rgba(0, 0, 0, 0.3);
+  /** 阴影样式1 */
+  --shadow1-center: 0 -4rpx 10rpx rgba(0, 0, 0, 0.1);
+  /** 阴影样式2 */
+  --shadow2-center: 0 0 20rpx rgba(0, 0, 0, 0.1);
+  /** 阴影样式3 */
+  --shadow3-center: 0 0 40rpx rgba(0, 0, 0, 0.1);
+
+  /** 容器 */
+  /** 内边距 */
+  /** 迷你内边距 */
+  --container-padding-tiny: 24rpx;
+  /** 小内边距 */
+  --container-padding-small: 36rpx;
+  /** 中内边距 */
+  --container-padding-small: 48rpx;
+  /** 大内边距 */
+  --container-padding-large: 56rpx;
+
+  /** 外边距 */
+  /** 迷你外边距 */
+  --container-margin-tiny: 28rpx;
+  /** 小外边距 */
+  --container-margin-small: 32rpx;
+  /** 中外边距 */
+  --container-margin-small: 36rpx;
+  /** 大外边距 */
+  --container-margin-large: 40rpx;
+}

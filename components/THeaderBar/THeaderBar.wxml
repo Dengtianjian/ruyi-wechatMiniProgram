@@ -1,0 +1,16 @@
+<!-- components/base/THeaderBar/THeaderBar.wxml -->
+<view class="bar" style="position:{{ fixed?'fixed':'relative' }};z-index:{{ zIndex }};color:{{styleColorValue}};background:{{ backBackground }};">
+  <view class="status-bar" style="height:{{ statusBarHeight }}px;">
+    <slot name="status-bar" />
+  </view>
+  <view class="bar-body" style="grid-template-columns:auto {{ menuWidth }}px;padding:0 {{ padding }}px;min-height:{{ navbarHeight }}px;">
+    <view>
+      <slot />
+    </view>
+    <view class="bar-menu">
+      <slot name="menu" />
+    </view>
+  </view>
+  <view class="bar-background" style="{{ styleString }}"></view>
+</view>
+<view class="bar-placeholder" wx:if="{{ fixed&&placeholder }}" style="z-index:{{ zIndex-1 }};height:{{ barHeight }}px"></view>

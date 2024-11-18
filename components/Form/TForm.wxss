@@ -1,0 +1,5 @@
+/* components/base/Form/TForm.wxss */
+.t-form {
+  display: flex;
+  flex-direction: column;
+}

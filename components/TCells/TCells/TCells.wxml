@@ -1,0 +1,5 @@
+<!-- components/base/TCells/index/index.wxml -->
+<view class="t-cells">
+  <view class="t-cells-title ellipsis1" wx:if="{{ title }}">{{ title }}</view>
+  <slot />
+</view>

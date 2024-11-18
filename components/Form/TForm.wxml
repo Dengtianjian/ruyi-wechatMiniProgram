@@ -1,0 +1,4 @@
+<!-- components/base/Form/TForm.wxml -->
+<view class="t-form">
+  <slot />
+</view>

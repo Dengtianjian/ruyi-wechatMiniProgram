@@ -1,0 +1,16 @@
+.t-button {
+  font-weight: normal;
+}
+
+.t-button-block {
+  display: block;
+  width: 100% !important;
+}
+
+.t-button-radius {
+  border-radius: 80rpx;
+}
+
+.t-button-storage {
+  font-weight: bold;
+}

@@ -1,0 +1,83 @@
+/* components/base/TModal/TModal.wxss */
+.r-drawer {
+  display: block;
+  position: relative;
+  width: 100vw;
+  height: calc(100vh + env(safe-area-inset-bottom));
+  box-sizing: border-box;
+  border-radius: 30rpx 30rpx 0 0;
+  overflow: hidden;
+  background-color: white;
+  border-radius: var(--radius-angle_2);
+  box-sizing: border-box;
+}
+
+.t-model_inside {
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+}
+
+.r-drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+  min-height: 60rpx;
+  line-height: 1.1;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.r-drawer-left {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 8rpx;
+  max-width: 25%;
+  min-width: 15%;
+}
+
+.r-drawer-header-center {
+  flex: 1 0;
+}
+
+.r-drawer-right {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  column-gap: 8rpx;
+  position: relative;
+  max-width: 25%;
+  min-width: 15%;
+}
+
+.r-drawer-header-center {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20rpx;
+}
+
+.r-drawer-title {
+  font-size: 32rpx;
+}
+
+.r-drawer-subtitle {
+  line-height: 1.4;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.r-drawer-close {
+  position: absolute;
+  right: 30rpx;
+  top: 10rpx;
+  font-size: 40rpx;
+}
+
+.r-drawer-body {
+  padding-bottom: env(safe-area-inset-bottom);
+  overflow: hidden auto;
+}

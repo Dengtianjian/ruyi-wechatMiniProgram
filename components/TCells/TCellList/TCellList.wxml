@@ -1,0 +1,4 @@
+<!-- components/base/TCells/TCellList/TCellList.wxml -->
+<view class="t-cell-list {{ safeAreaInsetBottom?'t-cell-list_safe-area':'' }}" style="row-gap:{{ rowGap }}">
+  <slot />
+</view>

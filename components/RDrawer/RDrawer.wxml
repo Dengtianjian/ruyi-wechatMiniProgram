@@ -1,0 +1,20 @@
+<t-modal model:show="{{ show }}" inside="{{ inside }}" zIndex="{{ zIndex }}" position="{{ position }}" bind:mask="closeDrawer" bind:show="showDrawer">
+  <view class="r-drawer" style="width:{{ width }};height:{{ height }}">
+    <view class="r-drawer-header">
+      <view class="r-drawer-left">
+        <slot name="left" />
+      </view>
+      <view class="r-drawer-header-center">
+        <view class="r-drawer-title" wx:if="{{ title }}">{{ title }}</view>
+        <view class="r-drawer-subtitle" wx:if="{{ subtitle }}">{{ subtitle }}</view>
+      </view>
+      <view class="r-drawer-right">
+        <slot name="right" />
+      </view>
+    </view>
+    <view class="r-drawer-body" style="height:{{ bodyHeight }};">
+      <slot />
+    </view>
+  </view>
+  <view class="antd antd-close r-drawer-close" bind:tap="closeDrawer" wx:if="{{ closeButton }}"></view>
+</t-modal>

@@ -1,0 +1,91 @@
+/* components/base/TAlert/TAlert.wxss */
+.t-alert {
+  --theme-icon-color: #333639;
+  --theme-border-color: #efeff5;
+  --theme-background-color: #fafafc;
+
+  display: flex;
+  column-gap: 16rpx;
+  padding: 26rpx;
+  line-height: 1.6;
+  word-break: break-all;
+  border-radius: var(--radius-angle);
+  background-color: var(--theme-background-color);
+}
+
+.t-alert_size-small {
+  padding: 20rpx;
+}
+
+.t-alert_border {
+  border: 1px solid var(--theme-border-color);
+}
+
+.t-alert_icon {
+  flex-flow: 0;
+  align-self: flex-start;
+  line-height: 40rpx;
+  font-size: 40rpx;
+  color: var(--theme-icon-color);
+}
+
+.t-alert-main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  row-gap: 18rpx;
+}
+
+.t-alert_title {
+  line-height: 38rpx;
+  font-size: 32rpx;
+  color: #1f2225;
+}
+
+.t-alert_content {
+  font-size: 28rpx;
+  color: #333639;
+}
+
+.t-alert_size-small .t-alert_content {
+  font-size: 24rpx;
+}
+
+.t-alert_close {
+  flex-flow: 0;
+  padding: 4rpx;
+  line-height: 32rpx;
+  align-self: flex-start;
+  font-size: 32rpx;
+  color: #666666;
+}
+
+.t-alert_close:active {
+  background-color: #E3E3E5;
+  border-radius: var(--radius-angle);
+}
+
+/** 不同类型的样式 */
+.t-alert_info {
+  --theme-icon-color: #2080f0;
+  --theme-border-color: #c7dffb;
+  --theme-background-color: #EDF5FE;
+}
+
+.t-alert_success {
+  --theme-icon-color: #18A058;
+  --theme-border-color: #C5E7D5;
+  --theme-background-color: #EDF7F2;
+}
+
+.t-alert_warning {
+  --theme-icon-color: #F0A020;
+  --theme-border-color: #FAE0B5;
+  --theme-background-color: #FEF7ED;
+}
+
+.t-alert_error {
+  --theme-icon-color: #D03050;
+  --theme-border-color: #F3CBD3;
+  --theme-background-color: #FBEEF1;
+}
