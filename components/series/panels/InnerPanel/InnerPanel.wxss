@@ -1,0 +1,31 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10rpx;
+  background-color: var(--color-bg-2);
+  border-radius: var(--border-radius-medium);
+}
+
+.panel-backgrounded {
+  background-color: var(--color-bg-3);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10rpx;
+}
+
+.panel-title {
+  flex-shrink: 0;
+  font-size: var(--font-size-title-1);
+}
+
+.panel_storage .panel-title {
+  font-weight: var(--font-weight-700);
+}
+
+.panel-header-extra {
+  flex-shrink: 0;
+}

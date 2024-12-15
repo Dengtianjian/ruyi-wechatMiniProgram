@@ -1,0 +1,21 @@
+<view class="panel {{ backgrounded?'panel-backgrounded':'' }} {{ storage?'panel_storage':'' }} panel_{{ size }}" style="padding:{{ padding }}">
+  <view class="panel-header" wx:if="{{ useHeaderSlot||useTitleSlot||title||useHeaderExtraSlot||headerExtra }}">
+    <slot name="header" />
+    <view class="panel-title" wx:if="{{ useTitleSlot||title }}">
+      {{ title }}
+      <slot name="title" />
+    </view>
+    <view class="panel-header-extra" wx:if="{{ useHeaderExtraSlot||headerExtra }}">
+      {{ headerExtra }}
+      <slot name="header-extra" />
+    </view>
+  </view>
+  <view class="panel-body">
+    {{ body }}
+    <slot />
+  </view>
+  <view class="panel-footer" wx:if="{{ footer||useFooterSlot }}">
+    {{ footer }}
+    <slot name="footer" />
+  </view>
+</view>

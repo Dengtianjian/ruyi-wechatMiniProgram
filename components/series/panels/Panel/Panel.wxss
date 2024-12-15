@@ -1,0 +1,31 @@
+/* ruyi-wechatMiniProgram/components/series/panels/DefaultPanel/DefaultPanel.wxss */
+.panel {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10rpx;
+  background-color: var(--color-bg-2);
+}
+
+.panel-bordered {
+  border-bottom: 1px solid var(--color-border-1);
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 10rpx;
+}
+
+.panel-title {
+  flex-shrink: 0;
+  font-size: var(--font-size-title-1);
+}
+
+.panel_storage .panel-title {
+  font-weight: var(--font-weight-700);
+}
+
+.panel-header-extra {
+  flex-shrink: 0;
+}

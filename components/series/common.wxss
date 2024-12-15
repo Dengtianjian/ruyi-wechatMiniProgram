@@ -78,11 +78,11 @@ page {
   /** 无圆角 */
   --border-radius-none: none;
   /** 圆角-常规 */
-  --border-radius-small: none;
+  --border-radius-small: 4rpx;
   /** 圆角-中等 */
-  --border-radius-medium: none;
+  --border-radius-medium: 8rpx;
   /** 圆角-较大 */
-  --border-radius-large: none;
+  --border-radius-large: 16rpx;
   /** 圆角-全圆角 */
   --border-radius-circle: 50%;
 
@@ -96,24 +96,18 @@ page {
   /** 阴影样式3 */
   --shadow3-center: 0 0 40rpx rgba(0, 0, 0, 0.1);
 
-  /** 容器 */
-  /** 内边距 */
-  /** 迷你内边距 */
-  --container-padding-tiny: 24rpx;
-  /** 小内边距 */
-  --container-padding-small: 36rpx;
-  /** 中内边距 */
-  --container-padding-small: 48rpx;
-  /** 大内边距 */
-  --container-padding-large: 56rpx;
+  /** 页面*/
+  /** 边距*/
+  --page-margin-medium: 32rpx;
 
-  /** 外边距 */
-  /** 迷你外边距 */
-  --container-margin-tiny: 28rpx;
-  /** 小外边距 */
-  --container-margin-small: 32rpx;
-  /** 中外边距 */
-  --container-margin-small: 36rpx;
-  /** 大外边距 */
-  --container-margin-large: 40rpx;
+  /** 容器 */
+  /** 边距 */
+  /** 迷你边距 */
+  --container-margin-tiny: 8rpx;
+  /** 小边距 */
+  --container-margin-small: 16rpx;
+  /** 中边距 */
+  --container-margin-medium: 24rpx;
+  /** 大边距 */
+  --container-margin-large: 32rpx;
 }

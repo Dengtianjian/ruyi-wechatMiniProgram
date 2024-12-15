@@ -1,0 +1,11 @@
+/* ruyi-wechatMiniProgram/components/series/panels/PanelList/PanelList.wxss */
+.panel-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: var(--container-margin-medium);
+  padding: var(--container-margin-medium);
+}
+
+.panel-list_inner {
+  padding: 0rpx;
+}

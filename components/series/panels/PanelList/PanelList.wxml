@@ -1,0 +1,4 @@
+<!-- ruyi-wechatMiniProgram/components/series/panels/PanelList/PanelList.wxml -->
+<view class="panel-list {{ inner?'panel-list_inner':'' }} panel-list_{{ size }}">
+  <slot />
+</view>
